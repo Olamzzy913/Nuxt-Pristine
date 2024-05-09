@@ -1,0 +1,484 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Style for sections
+.heroP1 {
+  background-image: url(/assets/images/hero__1.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hovEff2 {
+  background-image: url(/assets/images/hero__1.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.heroP2 {
+  background-image: url(/assets/images/hero__2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroP3 {
+  background-image: url(/assets/images/hero__3.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroP4 {
+  background-image: url(/assets/images/hero__4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroP5 {
+  background-image: url(/assets/images/hero__5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroP6 {
+  background-image: url(/assets/images/ser_pro_3.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroP7 {
+  background-image: url(/assets/images/ser_prof_3.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroP8 {
+  background-image: url(/assets/images/ser_dom_3.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+b {
+  overflow-x: hidden;
+}
+
+.dropMenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+  transition: all ease out;
+}
+
+.outext:before {
+  content: "\2022";
+  color: #4aa8c6;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.card {
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card_stroke {
+  content: "";
+  width: 20%;
+  height: 4px;
+  background: #fff;
+  display: block;
+  margin: auto;
+}
+
+.headTitle::after {
+  content: "";
+  width: 15%;
+  height: 4px;
+  background: #80011f;
+  display: block;
+  margin: auto;
+}
+
+.headTitle1::after {
+  content: "";
+  width: 15%;
+  height: 4px;
+  background: #80011f;
+  display: block;
+}
+
+.bg_style::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -10;
+  width: 300px;
+  height: 400px;
+  background: green;
+  display: block;
+  z-index: 1;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #80011f;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 50%;
+}
+
+.list ul {
+  position: fixed;
+  top: 82px;
+  right: -100%;
+  height: 100vh;
+  width: 300px;
+  background: #80011f;
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  float: right;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .list ul {
+  right: 0;
+}
+
+@media screen and (min-width: 976px) {
+  .up_front {
+    position: relative;
+    top: -10px;
+    left: 10px;
+  }
+}
+
+.offset:hover a {
+  text-underline-offset: 2px;
+}
+
+.hovEff {
+  background-image: url(/assets/images/ser_dom_2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 410px;
+}
+
+.hovEff3 {
+  background-image: url(/assets/images/ser_prof_2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 410px;
+}
+
+.hovEff4 {
+  background-image: url(/assets/images/ser_pro_2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 410px;
+}
+
+.hovEffSer {
+  background-image: url(/assets/images/ser_prof_2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 4px;
+}
+
+//service domestic image
+.hovEffSer1 {
+  background-image: url(/assets/images/dom_house.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer2 {
+  background-image: url(/assets/images/dom_house.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer3 {
+  background-image: url(/assets/images/dom_cook.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer4 {
+  background-image: url(/assets/images/dom_chef.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer5 {
+  background-image: url(/assets/images/dom_driver.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer6 {
+  background-image: url(/assets/images/dom_adult.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer7 {
+  background-image: url(/assets/images/dom_personal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer8 {
+  background-image: url(/assets/images/dom_baby.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+//service professionals image
+.hovEffSer9 {
+  background-image: url(/assets/images/prof_re.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer10 {
+  background-image: url(/assets/images/interview.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer11 {
+  background-image: url(/assets/images/prof_intrim.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer12 {
+  background-image: url(/assets/images/prof_con.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer13 {
+  background-image: url(/assets/images/onboard.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer14 {
+  background-image: url(/assets/images/prof_employee.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer15 {
+  background-image: url(/assets/images/prof_training.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer16 {
+  background-image: url(/assets/images/prof_benefit.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer17 {
+  background-image: url(/assets/images/pro_sourcing.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer18 {
+  background-image: url(/assets/images/prof_training.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer19 {
+  background-image: url(/assets/images/pro_shopping.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer20 {
+  background-image: url(/assets/images/prof_intrim.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer21 {
+  background-image: url(/assets/images/pro_cost.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer22 {
+  background-image: url(/assets/images/pro_risk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer23 {
+  background-image: url(/assets/images/official.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hovEffSer24 {
+  background-image: url(/assets/images/dom_nanny.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.effSer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.6s;
+}
+
+.overlaySer {
+  position: absolute;
+  bottom: 0;
+  top: 123px;
+  left: 8px;
+}
+
+.eff {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.6s;
+}
+
+.chagnover:hover .eff {
+  height: 410px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+  left: 50px;
+}
+
+.showcase-text {
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.showcase-img {
+  animation: slideInFromRight 1s ease-in;
+}
+
+@keyframes horizontal {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -110%;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
