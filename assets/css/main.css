@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-// Style for sections
 .heroP1 {
   background-image: url(/assets/images/hero__1.avif);
   background-size: cover;
